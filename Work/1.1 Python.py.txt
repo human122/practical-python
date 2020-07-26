@@ -1,0 +1,33 @@
+Python 3.6.7 (v3.6.7:6ec5cf24b7, Oct 20 2018, 13:35:33) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> (3 + 4
+         + 5 + 6)
+18
+>>> for i in range(5):
+        print(i)
+
+        
+0
+1
+2
+3
+4
+>>> import urllib.request
+>>> u = urllib.request.urlopen('http://ctabustracker.com/bustime/map/getStopPredictions.jsp?stop=14791&route=22')
+>>> u
+<http.client.HTTPResponse object at 0x0000007289A2BB38>
+>>> from xml.etree.ElementTree import parse
+>>> doc = parse(u)
+>>> for pt in doc.findall('.//pt'):
+	print(pt.text)
+
+			  
+9 MIN
+>>> u = urllib.request.urlopen('http://ctabustracker.com/bustime/map/getStopPredictions.jsp?stop=14791&route=22')
+>>> doc = parse(u)			  
+>>> for pt in doc.findall('.//pt'):
+	print(pt.text)
+
+			  
+5 MIN
+>>> 
