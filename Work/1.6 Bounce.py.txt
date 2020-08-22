@@ -1,0 +1,25 @@
+Python 3.6.7 (v3.6.7:6ec5cf24b7, Oct 20 2018, 13:35:33) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> def bounce(h):
+	return h * 3 / 5
+
+>>> round(9.23425634)
+9
+>>> round(9.23425634, 5)
+9.23426
+>>> for i in range(10):
+	height = bounce(height)
+	print(round(height, 4))
+
+	
+60.0
+36.0
+21.6
+12.96
+7.776
+4.6656
+2.7994
+1.6796
+1.0078
+0.6047
+>>> 
