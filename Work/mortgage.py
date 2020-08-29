@@ -22,7 +22,7 @@ while principal > 0:
         principal = principal * (1+rate/12) - payment
     total_paid = total_paid + payment
     months += 1
-    print(months, round(total_paid, 2), round(principal, 2))
+    print(f'{months} {total_paid:0.2f} {principal:0.2f}')
 
-print('Total paid', total_paid)
-print('Months', months)
+print(f'Total paid {total_paid:0.2f}')
+print(f'Months {months}')
